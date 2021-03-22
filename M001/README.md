@@ -84,3 +84,11 @@ db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
                           { "$or" :[ { "airplane": "CR2" },
                                      { "airplane": "A81" } ] }
                          ]}).count() // returns 18
+
+* Expressive Query Operator
+
+```$expr``` allows the use of aggregasion expressions within the query language
+
+``` {$expr: { <expression> } }  ```
+
+```$expr``` allows the use variables and conditional statments
