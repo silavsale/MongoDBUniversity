@@ -68,7 +68,7 @@ Find which student ids are > 25 and < 100 in the sample_training.grades collecti
 * Explicit $and
 
 Explicitly use $and when you need to include the same operator more than once in a query.
-
+```
 db.routes.find({ "$or" :[
                  { "dst_airport": "KZN" },
                  { "src_airport": "KZN" }
@@ -77,10 +77,12 @@ db.routes.find({ "$or" :[
                    { "airplane": "CR2" },
                    { "airplane": "A81" } 
               ] }).count()   // returns 56
-
+```
+```
 db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
                                     { "src_airport": "KZN" }
                                   ] },
                           { "$or" :[ { "airplane": "CR2" },
                                      { "airplane": "A81" } ] }
                          ]}).count() // returns 18
+```
