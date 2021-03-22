@@ -41,8 +41,8 @@ $gte >= Greater than or equal to
 $lte <= Less than or equal to
 
 $eq - $ne - $gt - $lt - $gte - $lte all this operators use the same sintax the
-{ <field> : { <operator> : <value> } }
-
+```{ <field> : { <operator> : <value> } }
+```
 ------------------------------------------------------------------------------------------------
 
  * Query Operators - Logic
@@ -54,16 +54,16 @@ $or   At least one of the query clauses is matched
 $nor Fail to match both given clauses
 $not Returns or documents that not match the query
 
-$and - $or - $nor this operators use this sintax {<operator> : [{statment1}, {statment2}, ...]}
+$and - $or - $nor this operators use this sintax ``` {<operator> : [{statment1}, {statment2}, ...]} ```
 
-$not use this sintax { $not: {statment1}}
+$not use this sintax ``` { $not: {statment1}} ```
 
 ------------------------------------------------------------------------------------------------
 * Implicit $and
 
 Find which student ids are > 25 and < 100 in the sample_training.grades collection.
 
-{"student_id": {"$gt" : 25, "$lt" : 100}}
+``` {"student_id": {"$gt" : 25, "$lt" : 100}} ```
 
 * Explicit $and
 
