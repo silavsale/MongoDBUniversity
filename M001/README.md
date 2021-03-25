@@ -2,7 +2,8 @@
 # Chapter 1: What is MongoDB?
 ###### Introduction to Atlas, and the MongoDB Shell
 
-
+mongo Shell Quick Reference
+https://docs.mongodb.com/manual/reference/mongo-shell/
 
 # Chapter 2: Importing, Exporting, and Querying Data
 ###### BSON, JSON, importing and exporting data, and Basic Queries
@@ -93,3 +94,39 @@ db.routes.find({ "$and": [ { "$or" :[ { "dst_airport": "KZN" },
 ``` {$expr: { <expression> } }  ```
 
 ```$expr``` allows the use variables and conditional statments
+
+* Array Operators
+
+To learn more about all available update operators in MQL, visit our excellent documentation page. https://docs.mongodb.com/manual/reference/operator/update/#id1
+
+``` {<array field> : {"$size" : <number>}} ```
+Returns a cursor with all documents where the specified array field is exactly the given length.
+
+``` {<array field> : {"$all" : <array>}} ```
+Returns a cursor with all documents in which the specified array field contains all the given elements regardless of their order in the array.
+
+Quering an array field using documents
+An array returns only exact array matches
+A single element will return all documents whre the specified array field contains this given element.
+
+* Array Operators and Projection
+
+Projection Syntax
+
+``` db.<collection>.find({ <query> }, { <projection> }) ```
+
+```1``` - include the field
+```0``` - exclude the field
+Use only 1s or only 0s
+
+``` db.<collection>.find({ <query> }, { <field1>: 1, <field2>: 1 }) ```
+or
+``` db.<collection>.find({ <query> }, { <field1>: 0, <field2>: 0 }) ```
+exception: 
+``` db.<collection>.find({ <query> }, { <field1>: 1, "_id": 0 }) ``` 
+Only one exception - can exclude only "_id" with included fields
+
+``` {<field> : {"$elemMatch" : { <field> : <value> }}} ```
+Matches documents that contain an array field with at least one element that matches the specified query criteria.
+or
+Projects only the array elements with at least one element that matches the specified criteria.
