@@ -132,3 +132,13 @@ Only one exception - can exclude only "_id" with included fields
 Matches documents that contain an array field with at least one element that matches the specified query criteria.
 or
 Projects only the array elements with at least one element that matches the specified criteria.
+
+* Array Operators and Sub-Documents
+
+To learn more about querying arrays using MQL visit our excellent documentation page. To learn more about the $regex operator check out this documentation page.
+https://docs.mongodb.com/manual/tutorial/query-arrays/
+https://docs.mongodb.com/manual/reference/operator/query/regex/index.html
+
+# Chapter 5 Indexing and Aggregation Pipeline
+
+* Aggregation Framework
