@@ -142,3 +142,69 @@ https://docs.mongodb.com/manual/reference/operator/query/regex/index.html
 # Chapter 5 Indexing and Aggregation Pipeline
 
 * Aggregation Framework
+
+To learn more about aggregation, take our Aggregation Course!
+
+https://university.mongodb.com/courses/M121/about
+
+* Index
+
+To learn more about performance and indexing with MongoDB, take our MongoDB Performance Course! https://university.mongodb.com/courses/M201/about
+
+* Introduction to Data Modeling
+
+Data modeling - a way to organize fields in a document to support your application performance and querying capabilities.
+
+To learn more about data modeling with MongoDB, take our Data Modeling Course! Check out our documentation and blog.
+
+https://university.mongodb.com/courses/M320/about
+
+https://docs.mongodb.com/manual/core/data-modeling-introduction/
+
+https://www.mongodb.com/blog/post/building-with-patterns-a-summary
+
+* Upsert - Update or Insert?
+
+# Chapter 6 Next Step
+
+* Atlas Features - More Data Explorer
+
+Try out Atlas Search by following this tutorial!
+https://docs.atlas.mongodb.com/reference/atlas-search/tutorial/#fts-tutorial-ref
+
+* Atlas Products and Options
+
+To learn more about Realm check out our Realm documentation. https://docs.mongodb.com/realm/
+
+To learn about application development with MongoDB take a course from our Developer series. https://university.mongodb.com/learning_paths/developer
+
+Check out this Charts tutorial! https://docs.mongodb.com/charts/saas/tutorial/order-data/order-data-tutorial-overview/
+
+* What is MongoDB Compass?
+
+Documentation about the Validation tab in Compass. https://docs.mongodb.com/compass/current/validation/
+
+Schema Validation with MongoDB Documentation. https://docs.mongodb.com/manual/core/schema-validation/
+
+JSON Schema Validation - Locking down your model the smart way. https://www.mongodb.com/blog/post/json-schema-validation--locking-down-your-model-the-smart-way
+
+JSON Schema Validation - Checking Your Arrays https://www.mongodb.com/blog/post/json-schema-validation--checking-your-arrays
+
+* Why MongoDB? 
+
+At this point you have learned enough to start having a meaningful conversation about why developers, DBAs, and companies choose MongoDB as their database.
+
+This can also help you decide whether MongoDB is the right choice for you.
+
+To help you learn more about specific use cases, we put together case studies and articles about some of our customers and community members.
+
+We also added a link to the MongoDB Developer Hub and Community Forums where you can ask questions, learn new things, and connect with others who are diving into MongoDB content and products.
+
+Take a look and feel free to browse for more information.
+
+MongoDB Developer Hub https://developer.mongodb.com/
+MongoDB Community Forums https://developer.mongodb.com/community/forums/
+Case study: Bosch Leads Charge into Internet of Things https://www.mongodb.com/customers/bosch
+Case study: Coinbase https://www.mongodb.com/who-uses-mongodb
+Case study: SEGA https://www.mongodb.com/blog/post/sega-hardlight-migrates-to-mongodb-atlas-simplify-ops-improve-experience-mobile-gamers
+How the Financial Sector Uses MongoDB https://www.mongodb.com/industries/financial-services
